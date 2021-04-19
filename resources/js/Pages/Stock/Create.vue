@@ -10,14 +10,14 @@
  autocomplete="off"
  v-on:submit.prevent="submit"
  >
- <!--* ID -->
+
  <div class="flex flex-col pt-6">
  <label for="id">ID</label>
  <input type="text" id="id" name="id" v-model="form.id" />
  <div class="text-red-700 text-sm">{{ errors.id }}</div>
  {{ form.id }}
  </div>
- <!--* Description -->
+
  <div class="flex flex-col pt-6">
  <label for="description">Description</label>
  <input
@@ -28,7 +28,7 @@
  />
  <div class="text-red-700 text-sm">{{ errors.description }}</div>
  </div>
- <!--* Stock Category ID -->
+
  <div class="flex flex-col pt-6">
  <label for="stock_category_id">Stock Category ID</label>
  <select name="stock_category_id" id="stock_category_id">
@@ -39,7 +39,6 @@
  {{ errors.stock_category_id }}
  </div>
  </div>
- <!--* UOM -->
  <div class="flex flex-col pt-6">
  <label for="uom">UOM</label>
  <select name="uom" id="uom">
@@ -48,7 +47,7 @@
  </select>
  <div class="text-red-700 text-sm">{{ errors.uom }}</div>
  </div>
- <!--* Barcode -->
+
  <div class="flex flex-col pt-6">
  <label for="barcode">Barcode</label>
  <input
@@ -86,7 +85,7 @@
  </div>
  <div class="text-red-700 text-sm">{{ errors.discontinued }}</div>
  </div>
- <!--* Photo Path -->
+
  <div class="flex flex-col pt-6">
  <label for="photo_path">Photo Path</label>
  <input
@@ -97,7 +96,7 @@
  />
  <div class="text-red-700 text-sm">{{ errors.photo_path }}</div>
  </div>
- <!--* Button -->
+
  <div class="flex flex-col pt-6">
  <button type="submit" class="bg-indigo-800 text-white p-2">
  Save
